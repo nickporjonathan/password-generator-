@@ -15,6 +15,7 @@ function generatePassword() {
   var wantsNumeric = confirm("Do you want to include numeric characters?");
   var wantsSpecial = confirm("Do you want special characters?");
 
+  var available = [];
   if (wantsUppercase === true) {
     available = available.concat(uppercase);
   }
@@ -56,6 +57,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+  return
 }
 
 // Add event listener to generate button
