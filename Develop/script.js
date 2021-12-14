@@ -46,6 +46,8 @@ function generatePassword() {
       password + available[Math.floor(Math.random() * available.length)];
     i++;
   }
+
+  return password;
 }
 
 // Get references to the #generate element
@@ -57,7 +59,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-  return
 }
 
 // Add event listener to generate button
